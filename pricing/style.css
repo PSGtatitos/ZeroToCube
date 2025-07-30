@@ -1,0 +1,112 @@
+body {
+    background-color: rgb(58, 58, 58);
+    color: white;
+    overflow: hidden;
+}
+.navbar {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    font-size: large;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    padding-top: 60px;
+}
+.top {
+    margin: 0;
+    position: fixed;
+    right: 1em;
+    top: 0.7em;
+    width: 10;
+}
+.logo {
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    left: 5px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.about {
+    margin: 0;
+    position: fixed;
+    right: 6em;
+    top: 0.7em;
+}
+.pricing {
+    margin: 0;
+    position: fixed;
+    right: 11em;
+    top: 0.7em;
+}
+.pulldown {
+    opacity: 0;
+    background-color: rgb(36, 36, 36);
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.one {
+    text-align: center;
+}
+.text-two {
+    text-align: center;
+}
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.learn {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 105px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    right: 26em;
+    top: 1.08em;
+}
+.learn:hover .pulldown{
+    opacity: 100%;
+    pointer-events: auto;
+}
+.begginer-method {
+    text-align: center;
+}
+.cfop {
+    text-align: center;
+}
+.roux {
+    text-align: center;
+}
+.zz {
+    text-align: center;
+}
+.methods {
+    opacity: 0;
+    background-color: rgb(36, 36, 36);
+    width: 130px;
+    height: 220px;
+    margin: 0;
+    position: absolute;
+    right: -130px;
+    top: 50%;
+    transition: opacity 0.3s;
+    pointer-events: none;
+}
+.two:hover .methods {
+    opacity: 100%;
+    pointer-events: auto;
+}
