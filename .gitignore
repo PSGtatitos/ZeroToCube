@@ -1,0 +1,26 @@
+# -------------------------------------------------------------
+# OS & Editor specific files
+# These files are created by your operating system or code editor
+# and are not part of your project's source code.
+# -------------------------------------------------------------
+
+# macOS specific files
+.DS_Store
+
+# Windows specific files
+Thumbs.db
+desktop.ini
+
+# VS Code specific files
+# The .vscode/ folder contains settings for your editor.
+# By ignoring it, you keep your personal workspace settings private.
+.vscode/
+
+# -------------------------------------------------------------
+# Dependencies & Build Artifacts (if you ever add them)
+# These are generated files that you don't need to commit.
+# -------------------------------------------------------------
+
+# A dependency folder if you use npm packages for JavaScript
+# (even if you don't have one now, you might in the future).
+/node_modules
