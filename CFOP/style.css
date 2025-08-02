@@ -126,6 +126,7 @@ a {
         position: fixed;
         top: 1rem;
         right: 1rem;
+
     }
 
     .bar {
@@ -143,28 +144,43 @@ a {
         display: flex;
     }
 
-    .top, .about, .pricing, .learn {
-        position: static;
+    .top, .about, .pricing {
+        position: static !important;
+        margin: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .learn {
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+        width: 100% !important;
         margin: 1rem 0;
         text-align: center;
     }
 
-    .learn {
-        position: relative;
-        right: 0;
-        top: 0;
-    }
 
-    .pulldown, .methods {
-        position: static;
-        opacity: 1;
-        pointer-events: auto;
+    .methods {
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
         display: none;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(36, 36, 36);
     }
 
-    .learn:hover .pulldown,
-    .two:hover .methods {
-        display: block;
+    .pulldown {
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+        display: none;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
     }
 
     .logo {
