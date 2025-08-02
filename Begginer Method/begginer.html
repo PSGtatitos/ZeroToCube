@@ -10,19 +10,26 @@
 <body>
     <div class="navbar">
         <a href="../index.html"><img src="../pngs/rubik.png" alt="rubik's cube" class="logo"></a>
-        <a href="../login/login.html"><h2 class="top">Log In</h2></a>
-        <a href="../about/about.html"><h2 class="about">About</h2></a>
-        <a href="../pricing/pricing.html"><h2 class="pricing">Pricing</h2></a>
-        <div class="learn">
-            <h2 class="text">Learn ▼</h2>
-            <div class="pulldown">
-                <a href="../2x2 methods/2x2methods.html"><h3 class="one">2x2</h3></a>
-                <div class="two"><h3 class="text-two">3x3 ▶</h3>
-                    <div class="methods">
-                        <a href="../Begginer Method/begginer.html"><h3 class="begginer-method">Begginer Method</h3></a>
-                        <a href="../CFOP/cfop.html"><h3 class="cfop">CFOP</h3></a>
-                        <a href="../Roux/roux.html"><h3 class="roux">Roux</h3></a>
-                        <a href="../ZZ/zz.html"><h3 class="zz">ZZ</h3></a>
+
+        <!-- Hamburger for mobile -->
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+        <div class="bar" id="nav-links">
+            <a href="../login/login.html"><h2 class="top">Log In</h2></a>
+            <a href="../about/about.html"><h2 class="about">About</h2></a>
+            <a href="../pricing/pricing.html"><h2 class="pricing">Pricing</h2></a>
+            <div class="learn">
+                <h2 class="text" id="learn-toggle">Learn ▼</h2>
+                <div class="pulldown" id="pulldown-menu">
+                    <a href="../2x2 methods/2x2methods.html"><h3 class="one">2x2</h3></a>
+                    <div class="two">
+                        <h3 class="text-two" id="three-toggle">3x3 ▶</h3>
+                        <div class="methods" id="three-menu">
+                            <a href="../Begginer Method/begginer.html"><h3 class="begginer-method">Begginer Method</h3></a>
+                            <a href="../CFOP/cfop.html"><h3 class="cfop">CFOP</h3></a>
+                            <a href="../Roux/roux.html"><h3 class="roux">Roux</h3></a>
+                            <a href="../ZZ/zz.html"><h3 class="zz">ZZ</h3></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -30,5 +37,31 @@
     </div>
     <h1 class="heading">The Beginner Method</h1>
     <p>The Beginner Method is one of the easiest methods one can solve a Rubik's cube with, after all it is "The Beginner Method". You might ask yourself "If this method is so easy why doesn't every cuber use it ?". Well that's because it is the most time-consuming method there is as  it has the most steps.</p>
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Click-to-toggle for Learn
+    const learnToggle = document.getElementById('learn-toggle');
+    const pulldownMenu = document.getElementById('pulldown-menu');
+
+    learnToggle.addEventListener('click', () => {
+        pulldownMenu.style.display =
+            pulldownMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Click-to-toggle for 3x3
+    const threeToggle = document.getElementById('three-toggle');
+    const threeMenu = document.getElementById('three-menu');
+
+    threeToggle.addEventListener('click', () => {
+        threeMenu.style.display =
+            threeMenu.style.display === 'block' ? 'none' : 'block';
+    });
+</script>
 </body>
 </html>

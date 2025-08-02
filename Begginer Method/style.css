@@ -82,7 +82,7 @@ a {
     opacity: 100%;
     pointer-events: auto;
 }
-.beginner-method {
+.begginer-method {
     text-align: center;
 }
 .cfop {
@@ -110,7 +110,90 @@ a {
     opacity: 100%;
     pointer-events: auto;
 }
-.heading {
-    margin-top: 100px;
-    text-align: center;
+.menu-lines {
+    position: fixed;
+    right: 20px;
+}
+/* === Base Styling for Menu Toggle === */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    z-index: 1001;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .bar {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        position: fixed;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .bar.active {
+        display: flex;
+    }
+
+    .top, .about, .pricing {
+        position: static !important;
+        margin: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .learn {
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+        width: 100% !important;
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+
+    .methods {
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+        display: none;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+        background-color: rgb(36, 36, 36);
+    }
+
+    .pulldown {
+        position: relative !important;
+        right: auto !important;
+        top: auto !important;
+        display: none;
+        margin-top: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 50px;
+    }
+
+    .navbar {
+        padding-top: 50px;
+    }
 }
